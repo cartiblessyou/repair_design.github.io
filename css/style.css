@@ -1,0 +1,1433 @@
+* {
+    box-sizing:border-box;
+    border: 1px solid red;
+}
+
+body {
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.wrapper_1 {
+    max-width: 1171px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1263px;
+    margin: 0 auto;
+}
+
+input {
+    outline: none;
+}
+/*header styles start*/
+
+header {
+    background-color: #131313;
+}
+
+.header_wrapper {
+    margin: 0 auto;
+    max-width: 1263px;
+    min-height: 83px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header_name a {
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3B873;
+    text-decoration: none;
+    width: 180px;
+}
+
+.header_list {
+    display: flex;
+}
+
+.header_item {
+    margin-right: 47px;
+}
+
+
+.header_link {
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.home_link {
+    color: #E3B873;
+}
+
+.phone_number {
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    color: #E3B873;
+    margin-right: 45px;
+}
+
+.header_button {
+    width: 161px;
+    height: 37px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.header_button_text {
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/*header styles end*/
+
+/*intro styles start*/
+
+.intro {
+    width: 100%;
+    max-height: 707px;
+    background: url(../images/intro/intro_background.png);
+    background-size: cover;
+}
+
+.intro_overlay {
+    background:rgba(0, 0, 0, 0.7);
+    height: 100%;
+}
+
+.intro_text {
+    padding-top: 194px;
+    padding-right: 645px;
+    padding-bottom: 208px;
+}
+
+.intro_title {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 19px;
+}
+
+.intro_title_mark {
+    color:#E3B873;
+}
+
+.intro_subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 41px;
+}
+
+.intro_buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 434px;
+}
+.intro_button_first {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    border-radius: 2px;
+    width: 207px;
+    height:51px;
+    border-style:none;
+    cursor: pointer;
+}
+
+.intro_button_second {
+    width: 207px;
+    height:51px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.intro_button_text {
+    font-style: italic;
+    font-size: 11px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+/*intro styles end*/
+
+/*projects styles start*/
+
+.projects {
+    background-color: #131313;
+    height: 1074px;
+    z-index: 0;
+    position: relative;
+}
+
+.project_names {
+    max-width: 623px;
+    margin-left: 492px;
+}
+
+.project_names_list {
+    display: flex;
+    justify-content: space-between;
+
+    list-style-type: none;
+    padding: 0;
+    
+    padding-top: 107px;
+    margin: 0;
+}
+
+.project_names_item {
+    font-family: 'Yeseva One';
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.project_names_mark {
+    color: #E3B873;
+}
+
+.project_name_underline {
+    border: 1px solid #E3B873;
+    border-bottom-width: 0;
+    width: 194px;
+    margin-top: 7px;
+    margin-right: 429px;
+}
+
+.project_main {
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_text {
+    max-width: 442px;
+}
+
+.project_title {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.project_subtitle {
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 34px;
+}
+
+.project_slider {
+    display: none;
+}
+
+.slider_narrow_left {
+    display: none;
+}
+
+.slider_narrow_right {
+    display: none;
+}
+
+.project_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr;
+    margin-top: 42px;
+    row-gap: 34px;
+}
+.project_info_block {
+    height: 73px;
+}
+.project_info_title {
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0;
+}
+
+.project_info_text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-top: 9px;
+    margin-bottom: 0;
+}
+
+.project_narrows {
+    margin-top: 55px;
+}
+
+
+/*projects styles end*/
+
+/*control styles start*/
+.control {
+    background-color: #fff;
+    z-index: -1;
+}
+.control_main {
+    text-align: center;
+    margin-top: -324px;
+    z-index: 1;
+    position: relative;
+}
+
+.control_title {
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 13px;
+}
+
+.control_icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 31px;
+}
+
+.control_icon_cam {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.control_video {
+    margin-bottom: 63px;
+}
+
+.control_video_container {
+    position: relative;
+}
+
+.control_video_icon {
+    position: absolute;
+    top: 145px;
+    left: 550px;
+}
+
+.control_video_icon_mobile {
+    display: none;
+}
+
+.control_underline {
+    border: solid 1px #E3B873;
+    width: 55px;
+    border-radius: 30px;
+    margin-top: 0;
+    margin-bottom: 34px;
+}
+
+.control_text {
+    font-size: 18px;
+    line-height: 37px;
+    color: #363636;
+    margin-bottom: 91px;
+    max-width: 681px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.control_form {
+    text-align: initial;
+    display: flex;
+    justify-content: center;
+}
+
+.control_form_field {
+    display: block;
+    width: 231px;
+    margin-bottom: 39px;
+    margin-right: 55px;
+    border:0;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    padding-bottom: 8px;
+}
+
+.control_form_label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.control_form_field::placeholder {
+    font-size: 14px;
+    color: #363636;
+    font-weight: 400;
+}
+
+.control_form_submit {
+    width: 200px;
+    height: 51px;
+    background: #E3B873;
+    box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+    border: 0;
+    border-radius: 2px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.control_form_submit:hover {
+    background: #be9b62;
+}
+
+.control_checkbox {
+    margin-bottom: 148px;
+}
+
+.control_checkbox_fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+.control_checkbox_input {
+    display: none;
+}
+.control_checkbox_text {
+    font-size: 14px;
+    color: #181818;
+    margin-left: 9px;
+}
+.control_checkbox_fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+.control_checkbox_input:checked + .control_checkbox_fake::before{
+    opacity: 1;
+}
+.control_checkbox_mobile {
+    display: none;
+}
+/*control styles end*/
+
+
+
+/*types styles start*/
+.types {
+    background-image: url(../images/cons/cons_bg.png);
+    background-repeat: no-repeat;
+    background-position-y: 810px;
+}
+.types_title {
+    margin-bottom: 13px;
+    text-align: center;
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #181818;
+}
+
+.types_icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 31px;
+}
+
+.types_cards {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 124px;
+}
+.types_card {
+    z-index: 0;
+}
+
+.types_card_text {
+    position: relative;
+    width: 330px;
+    height: 286px;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+    margin-top: -135px;
+    z-index: 1;
+    margin-left: 31px;
+    padding-top: 25px;
+}
+
+.types_card_title {
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    color: #363636;
+    margin-left: 34px;
+    margin-bottom: 13px;
+}
+
+.types_card_list {
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+    list-style: disc;
+    margin-left: 34px;
+}
+
+.types_price {
+    width: 228px;
+    height: 54px;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    margin-left: 31px;
+    margin-top: -26px;
+    z-index: 2;
+    position: relative;
+}
+
+.types_price_text {
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 17px 17px;
+}
+
+
+/*types styles end*/
+
+
+/*cons styles start*/
+.cons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+.cons_text {
+    max-width: 375px;
+    height: 473px;
+    margin-top: 107px;
+    margin-left: 249px;
+}
+.cons_text_p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 82px;
+}
+.cons_p_icon {
+    width: 42px;
+    height: 42px;
+    background-color:  #E3B873;;
+    border: 10px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 21px;
+}
+
+.cons_icon_number {
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.cons_description {
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+    margin-left: 5px;
+}
+
+.cons_form {
+    background-color: #131313;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    width: 506px;
+    height: 509px;
+    text-align: center;
+    margin-top: 106px;
+}
+
+.cons_form_title {
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-top: 28px;
+    margin-bottom: 39px;
+}
+
+.cons_form_wrapper {
+    text-align: initial;
+    margin-left: 49px;
+}
+
+.cons_form_label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cons_form_field {
+    display: block;
+    width: 408px;
+    margin-bottom: 48px;
+    border:0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 4px;
+    margin-top: 3px;
+    background-color: #131313;
+}
+.cons_form_last {
+    margin-bottom: 16px;
+}
+
+.cons_form_field::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;    
+}
+
+.cons_checkbox_text {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.cons_checkbox {
+    margin-bottom: 39px;
+}
+
+.cons_form_submit {
+    width: 213px;
+    height: 51px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 195px;
+}
+
+.cons_form_submit:hover {
+    background: #be9b62;
+}
+
+.cons_cost {
+    display: flex;
+    align-items: center;
+    margin-left: 774px;
+    margin-top: 8px;
+    height: 72px;
+}
+
+.cons_pig_icon {
+    width: 100px;
+    height: 100px;
+}
+
+.cons_cost_text {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    line-height: 26px;
+}
+
+.types_wrapper {
+    margin-bottom: 242px;
+}
+/*cons styles end*/
+
+
+/*fantasies styles start*/
+.fantasies {
+    background-image: url(../images/fantasies/fantasies_bg.png);
+    height: 864px;
+    background-size: cover;
+    margin-bottom: 110px;
+}
+
+.fantasies_overlay {
+    height: 100%;
+    background: linear-gradient(109.8deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+.fantasies_wrapper {
+    position: relative;
+    display: flex;
+}
+.fantasies_styles {
+    padding-top: 137px;
+    padding-left: 7px;
+}
+
+.fantasies_title {
+    font-family: 'Yeseva One';
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 49px;
+}
+
+.fantasies_list {
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.fantasies_list_item {
+    margin-bottom: 25px;
+    height: 23px;
+}
+.fantasies_slider {
+    display: none;
+}
+.fantasies_list_mark {
+    color: #E3B873;
+    border-bottom: 1px solid #E3B873;
+    width: 150px;
+    height: 35px;
+    margin-bottom: 21px;
+}
+
+.fantasies_gallery {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(115,10px);
+    grid-column-gap: 43px;
+    padding-right: 12px;
+    position: absolute;
+    right: 0;
+    top: -112px;
+}
+
+.fantasies_gallery_content_1 {
+    grid-column: 1/2;
+    grid-row: 8;
+}
+
+.fantasies_gallery_content_2 {
+    grid-column: 2/-1;
+    grid-row: 0;
+}
+
+.fantasies_gallery_content_3 {
+    grid-column: 1/2;
+    grid-row: 68;
+}
+
+.fantasies_gallery_content_4 {
+    grid-column: 2/-1;
+    grid-row: 32;
+}
+
+/*fantasies styles end*/
+
+/*clients styles start*/
+
+
+.clients_wrapper {
+    text-align: center;
+    position: relative;
+}
+
+.clients_title {
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    margin-bottom: 13px;
+}
+
+.clients_icon {
+    margin-bottom: 24px;
+}
+
+.clients_subtitle {
+    font-size: 18px;
+    line-height: 29px;
+    color: #363636;
+    margin-bottom: 39px;
+}
+
+.clients_cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 54px;
+    margin-bottom: 382px;
+}
+
+.clients_card {
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    padding-left: 20px;
+    padding-right: 32px;
+    position: relative;
+}
+
+.clients_card_profile {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 22px;
+}
+
+.clients_profile_text {
+    text-align: left;
+    margin-left: 23px;
+    font-family: 'Yeseva One';
+    font-size: 18px;
+    line-height: 23px;
+    color: #181818;
+}
+
+.clients_card_text {
+    text-align: initial;
+    font-size: 13px;
+    color: #959595;
+    line-height: 23px;
+    margin-bottom: 63px;
+}
+
+.clients_card_info {
+    background: #E3B873;
+    box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+    width: 294px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: -27px;
+
+}
+
+.clients_info_icon {
+    margin-left: 17px;
+}
+
+.clients_info_text {
+    margin-left: 15px;
+    font-family: 'Yeseva One';
+    font-size: 17px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.clients_info_line {
+    margin-left: 14px;
+}
+
+.clinets_backgound {
+    display: flex;
+    position: absolute;
+    left: -92px;
+    bottom: -384px;
+}
+
+/*clients styles end*/
+
+/*contacts styles start*/
+.contacts {
+    background:
+    linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%),
+    url(../images/conact/image\ 7.2.png) center / cover no-repeat #181818;
+    background-size: cover;
+}
+
+.contacts_wrapper {
+    position: relative;
+    height: 953px;
+    text-align: center;
+}
+
+.contacts_overlay {
+    height: 100%;
+}
+
+.contacts_form {
+    background: #181818;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+    width: 883px;
+    height: 445px;
+    text-align: center;
+    margin-left: 196px;
+    position: absolute;
+    top: -222px;
+}
+
+.contacts_form_title {
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 34px;
+    margin-bottom: 43px;
+}
+
+.contacts_form_wrapper {
+    text-align: initial;
+    margin-left: 181px;
+    margin-right: 181px;
+}
+
+.contacts_form_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_form_label {
+    font-size: 13px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contacts_form_field {
+    display: block;
+    width: 231px;
+    margin-bottom: 45px;
+    border:0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    background: #181818;
+    padding-bottom: 8px;
+    padding-top: 7px;
+}
+.contacts_form_last {
+    width: 517px;
+}
+
+.contacts_form_field::placeholder {
+    font-size: 14px;
+    line-height: 23px;
+    color: #FFFFFF;    
+}
+
+.contacts_checkbox_text {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.contacts_checkbox {
+    margin-bottom: 45px;
+    text-align: center;
+}
+
+.contacts_form_submit {
+    width: 200px;
+    height: 51px;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+    border: 0;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 160px;
+}
+
+.contacts_form_submit:hover {
+    background: #be9b62;
+}
+
+.contacts_text {
+    padding-top: 274px;
+    font-family: 'Yeseva One';
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin-bottom: 26px;
+}
+
+.contacts_icon {
+    text-align: center;
+    margin-bottom: 43px;
+}
+
+.contacts_icon_ig {
+    margin-left: 12px;
+}
+
+.contacts_map {
+    width: 925px;
+    height: 465px;
+    margin-bottom: 66px;
+}
+
+.contacts_map_mobile {
+    display: none;
+}
+/*contacts styles end*/
+
+/*footer styles start*/
+
+.footer {
+    background: #181818;
+}
+
+.footer_wrapper {
+    min-height: 133px;
+    margin: 0 auto;
+    max-width: 1263px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*footer styles end*/
+
+/*medai start*/
+
+@media screen and (min-width: 2496px) {
+    .intro {
+        background: url(../images/_media/image\ 4.3.png);
+    }
+}
+
+@media screen and (max-width: 1300px){
+    *{
+        border: 1px solid red;
+        box-sizing: border-box;
+    }
+    br {
+        display: none;
+    }
+    img {
+        width:auto;
+        max-width:100%;
+    }
+    /*@media header styles start*/
+    .header {
+        background-color:rgba(24, 24, 24, 1);
+    }
+    .header_wrapper {
+        min-height: 57px;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+    .header_nav {
+        display: none;
+    }
+    .header_button {
+        display: none;
+    }
+    .phone_number {
+        color: #FFFFFF;
+        text-decoration: none;
+        margin: 0;
+    }
+    /*@media header styles end*/
+
+    /*@media intro styles start*/
+    .wrapper_1 {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+    .intro {
+        background-image: url(../images/_media/image\ 4.7.png);
+        text-align: center;
+    }
+    .intro_text {
+        padding-right: 0;
+        padding-top: 85px;
+        padding-bottom: 61px;
+    }
+    .intro_title {
+        font-size: 23px;
+        line-height: 31px;
+    }
+    .intro_subtitle {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .intro_br {
+        display: none;
+    }
+    .intro_buttons {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+    }
+    .intro_button_first {
+        width: 100%;
+        margin-bottom: 26px;
+    }
+    .intro_button_second {
+        width: 100%;
+    }
+
+    .intro_button_disappear {
+        display: none;
+    }
+    /*@media intro styles end*/
+
+    /*@media project styles start*/
+    .projects {
+        text-align: center;
+        background-color:rgba(24, 24, 24, 1);
+        height: 100%;
+    }
+    .project_names {
+        display: none;
+    }
+    .project_main {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .project_narrows {
+        display: none;
+    }
+    .project_title {
+        padding-top: 36px;
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .project_subtitle {
+        font-size: 11px;
+        line-height: 17px;
+        margin-top: 22px;
+    }
+    .project_slider {
+        margin-top: 70px;
+        display: block;
+        position: relative;
+    }
+    .project_slider_img {
+        width: 100%; 
+    }
+    .slider_narrow_left {
+        display: inline;
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        top: 0;
+        left: 14px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        margin: auto;
+        background-size: 20%;
+        background: url(../images/project/narrow_left.svg) center center no-repeat;
+        background-color: #E3B873;
+    }
+    .slider_narrow_right {
+        display: inline;
+        position: absolute;
+        cursor: pointer;
+        bottom: 0;
+        top: 0;
+        right: 14px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        margin: auto;
+        background-size: 20%;
+        background: url(../images/project/narrow_right.svg) center center no-repeat;
+        background-color: #E3B873;
+    }
+    .project_image{
+        display: none;
+    }
+    .project_text {
+        max-width: 100%;
+    }
+    .project_info {
+        text-align: left;
+        margin-top: 36px;
+    }
+    .project_info_title {
+        font-size: 14px; 
+        line-height: 19.4px;
+    }
+    .project_info_text {
+        font-size: 11px;
+    }
+    /*@media project styles end*/
+
+    /*@media control styles start*/
+    .wrapper {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+    .control {
+        padding-top: 55px;
+        background-color:rgba(24, 24, 24, 1);
+    }
+    .control_main {
+        margin-top: 0;
+    }
+    .control_video {
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .control_video_icon {
+        display: none;
+    }
+    .control_video_icon_mobile {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+    }
+    .control_underline {
+        margin-top: 28px;
+    }
+    .control_text {
+        color:rgba(255, 255, 255, 1);
+        font-size: 11px;
+        line-height: 18px;    
+        margin-bottom: 61px;
+    }
+    .control_form {
+        flex-direction: column;
+    }
+    .control_form_label {
+        color:rgba(255, 255, 255, 0.5);
+        line-height: 12px;
+    }
+    .control_form_field {
+        margin-right: 0;
+        background-color: transparent;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        margin-top: 7px;
+    }
+    .control_form_field::placeholder {
+        font-size: 14px;
+        color: #FFFFFF;
+        font-weight: 400;
+    }
+    .control_form_submit {
+        width: 100%;
+        transform: translateY(50%);
+    }
+    .control_checkbox {
+        display: none;
+    }
+    .control_checkbox_mobile{
+        display: block;
+        margin-bottom: 52px;
+    }
+    .control_checkbox_mobile_fake {
+        display: inline-flex;
+        width: 18px;
+        height: 18px;
+        background: #E3B873;
+        color: #fff;
+        justify-content: center;
+    } 
+    .control_checkbox_mobile_input {
+        display: none;
+    }
+    .control_checkbox_mobile_text {
+        font-size: 14px;
+        color: #FFFFFF;
+        margin-left: 9px;
+    }
+    .control_checkbox_mobile_fake::before{
+        content:"\2714";
+        opacity: 0;
+        transition: .2s;
+    }
+    .control_checkbox_mobile_input:checked + .control_checkbox_mobile_fake::before{
+        opacity: 1;
+    }
+    /*@media control styles end*/
+
+    /*@media types styles start*/
+    .types {
+        background-image:none;
+    }
+    .types_wrapper {
+        padding-top: 89px;
+        margin-bottom: 0;
+    }
+    .types_icon {
+        margin-bottom: 40px;
+    }
+    .types_cards {
+        flex-direction: column;
+        padding-left: 0;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .types_card {
+        margin-bottom: 59px;
+    }
+    .types_card_text {
+        margin-left: 0;
+    }
+    .types_price {
+        margin-left: 0;
+    }
+    .types_designer {
+        margin-bottom: 55px;
+    }
+    /*@media types styles end*/
+    
+    /*@media clients styles start*/
+    .clients {
+        display: none;
+    }
+    /*@media clients styles end*/
+
+    /*@media cons styles start*/
+    .cons {
+        display: none;
+    }
+    .cons_cost {
+        display: none;;
+    }
+    /*@media cons styles end*/
+
+    /*@media fantasies styles start*/
+    .fantasies_list {
+        display: none;
+    }
+    .fantasies_gallery {
+        display: none;
+    }
+    .fantasies {
+        background-image: none;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .fantasies_overlay {
+        background:none;
+    }
+    .fantasies_styles {
+        width: 100%;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .fantasies_title {
+        margin-bottom: 35px;
+        font-size: 22px;
+    }
+    .fantasies_slider {
+        display: block;
+        position: relative;
+    }
+
+    .fantasies_image_mobile {
+        width: 100%;
+    }
+    /*@media fantasies styles end*/
+
+    /*@media contacts styles start*/
+    .contacts {
+        background: #181818;
+        margin-top: -121px;
+        padding-bottom: 49px;
+    }
+    .contacts_wrapper {
+        height: 100%;
+        padding-top: 173px;
+    }
+    .contacts_form_wrapper {
+        margin: 0;
+    }
+    .contacts_form_top {
+        display: block;
+    }
+    .contacts_form {
+        width: 100%;
+        position: static;
+        margin-left: 0;
+        height: 100%;
+    }
+    .contacts_form_field {
+        width: 100%;
+        border-bottom: 1px solid #FFFFFF;
+        margin-bottom: 63px;
+    }
+    .contacts_form_last {
+        width: 100%;
+        margin-bottom: 21px;
+    }
+    .contacts_checkbox {
+        text-align: left;
+    }
+    .contacts_form_submit {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 46px;
+    }
+    .contacts_text {
+        padding-top: 0;
+    }
+    .contacts_map {
+        display: none;
+    }
+    .contacts_map_mobile {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 42px;
+    }
+    .map_mobile{
+        width: 100%;
+    }
+    .contacts_icon {
+        margin-bottom: 0;
+    }
+    /*@media contacts styles end*/
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    /*@media footer styles start*/
+    footer {
+        display: none;
+    }
+    /*@media footer styles end*/
+
+
+    /*medai end*/
+}
