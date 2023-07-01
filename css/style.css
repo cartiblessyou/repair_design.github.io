@@ -752,6 +752,12 @@ header {
 /*fantasies styles end*/
 
 /*clients styles start*/
+.clients {
+    background-image: url(../images/clients/city-bg.png);
+    padding-bottom: 398px;
+    background-position-y: bottom;
+    background-repeat: repeat-x;
+}
 
 
 .clients_wrapper {
@@ -784,7 +790,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 54px;
-    margin-bottom: 382px;
+
 }
 
 .clients_card {
