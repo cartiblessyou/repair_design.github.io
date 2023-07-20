@@ -2,6 +2,10 @@
     box-sizing:border-box;
 }
 
+button {
+    cursor: pointer;
+}
+
 body {
     font-family: 'Nunito Sans';
     font-style: normal;
@@ -200,18 +204,13 @@ header {
     line-height: 19px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
 
-.project_names_mark {
+.project_names_active {
     color: #E3B873;
-}
-
-.project_name_underline {
-    border: 1px solid #E3B873;
-    border-bottom-width: 0;
-    width: 194px;
-    margin-top: 7px;
-    margin-right: 429px;
+    border-bottom: 1px solid #E3B873;
+    padding-bottom: 7px;
 }
 
 .project_main {
@@ -232,6 +231,18 @@ header {
     letter-spacing: -0.07em;
     text-transform: uppercase;
     color: #E3B873;
+    max-width: 161px;
+}
+
+.project_title_wrapper {
+    display: flex;
+}
+
+.project_line {
+    border-color: #E3B873;
+    width: 92px;
+    margin-left: 10px;
+    margin-top: 54px;
 }
 
 .project_subtitle {
@@ -284,6 +295,40 @@ header {
 
 .project_narrows {
     margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 236px;
+}
+
+.project_left_button {
+    background-image: url(../images/project/project_left_button.svg);
+    width: 42px;
+    height: 13px;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+    margin-right: 30px;
+}
+
+.project_right_button {
+    background-image: url(../images/project/project_right_button.svg);
+    width: 42px;
+    height: 13px;
+    border: none;
+    background-color: transparent;
+    background-size: cover;
+    margin-left: 30px;
+}
+
+.project_dot {
+    width: 10px;
+    height: 10px;
+    background-image: url(../images/project/project_dot.svg);
+    cursor: pointer;
+}
+
+.project_dot_active {
+    background-image: url(../images/project/project_dot_active.svg);
 }
 
 
@@ -1120,6 +1165,10 @@ header {
         padding-top: 36px;
         font-size: 22px;
         line-height: 30px;
+        margin: 0 auto;
+    }
+    .project_line {
+        display: none;
     }
     .project_subtitle {
         font-size: 11px;
@@ -1132,7 +1181,7 @@ header {
         position: relative;
     }
     .project_slider_img {
-        width: 100%; 
+        width: 100%;
     }
     .slider_narrow_left {
         display: inline;
